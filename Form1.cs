@@ -10,6 +10,7 @@ namespace PracticoDeMatrices
         private void Form1_Load(object sender, EventArgs e)
         {
             objMatrix1 = new Matrix();
+            objMatrix2 = new Matrix();
         }
 
         public void validateInputs()
@@ -105,6 +106,11 @@ namespace PracticoDeMatrices
             }
         }
 
+        private void verifSiLasFilasEst·nOrdenadasAscToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtResult2.Text = objMatrix1.IsOrderRowsAsc().ToString();
+        }
+
         private void contarElementos⁄nicosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int countUnique = 0;
@@ -112,10 +118,44 @@ namespace PracticoDeMatrices
             txtResult2.Text = countUnique.ToString();
         }
 
+        private void verifSiLaMatrizEst·OrdenadaConRigorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBox5.Text == "") throw new ArgumentException("Debe especificar el rigor");
+                txtResult2.Text = objMatrix1.IsOrderMatrixWithRigor(int.Parse(textBox5.Text)).ToString();
+            }
+            catch (Exception error)
+            {
+                errorHandler(error.Message);
+            }
+        }
+
         private void transpuestaDeUnaMatrizToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            objMatrix2 = new Matrix();
             objMatrix1.GetTransposedOfMatrix(ref objMatrix2);
+        }
+
+        private void elementoConMayorFrecuenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objMatrix1.setFrecuencyInLateral(ref objMatrix2);
+            txtResult2.Text = objMatrix2.GetData();
+        }
+
+        private void ejericio1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objMatrix1.Ejercicio2(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text), int.Parse(textBox4.Text));
+        }
+
+        private void laMatrizEst·IncluidaEnOtraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtResult3.Text = objMatrix1.CheckIfIsIncluded(ref objMatrix2).ToString();
+        }
+
+        private void segmentFilasEnParesEImparesOrdenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objMatrix1.SegmentRowsEvenAndOdd(ref objMatrix2);
+            txtResult2.Text = objMatrix2.GetData();
         }
     }
 }

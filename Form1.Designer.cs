@@ -46,6 +46,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtResult2 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtResult3 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtFrecuence = new System.Windows.Forms.TextBox();
@@ -58,9 +64,16 @@
             this.frecuenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contarElementosÚnicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transpuestaDeUnaMatrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verifSiLasFilasEstánOrdenadasAscToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.elementoConMayorFrecuenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verifSiLaMatrizEstáOrdenadaConRigorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.laMatrizEstáIncluidaEnOtraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.segmentFilasEnParesEImparesOrdenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.matriz2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.descargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejericio1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -70,7 +83,7 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(37, 178);
+            this.textBox1.Location = new System.Drawing.Point(37, 236);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(85, 27);
             this.textBox1.TabIndex = 0;
@@ -79,7 +92,7 @@
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(162, 178);
+            this.textBox2.Location = new System.Drawing.Point(162, 236);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(85, 27);
             this.textBox2.TabIndex = 1;
@@ -88,7 +101,7 @@
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(37, 290);
+            this.textBox3.Location = new System.Drawing.Point(37, 348);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(85, 27);
             this.textBox3.TabIndex = 2;
@@ -97,7 +110,7 @@
             // 
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(162, 290);
+            this.textBox4.Location = new System.Drawing.Point(162, 348);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(85, 27);
             this.textBox4.TabIndex = 3;
@@ -106,10 +119,9 @@
             // 
             this.txtResult1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtResult1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtResult1.Location = new System.Drawing.Point(39, 64);
+            this.txtResult1.Location = new System.Drawing.Point(45, 44);
             this.txtResult1.Multiline = true;
             this.txtResult1.Name = "txtResult1";
-            this.txtResult1.ReadOnly = true;
             this.txtResult1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtResult1.Size = new System.Drawing.Size(439, 132);
             this.txtResult1.TabIndex = 4;
@@ -133,7 +145,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(284, 450);
+            this.panel1.Size = new System.Drawing.Size(284, 566);
             this.panel1.TabIndex = 5;
             // 
             // label9
@@ -141,7 +153,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(37, 240);
+            this.label9.Location = new System.Drawing.Point(37, 298);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(202, 20);
             this.label9.TabIndex = 12;
@@ -152,7 +164,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(42, 133);
+            this.label8.Location = new System.Drawing.Point(42, 191);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(180, 20);
             this.label8.TabIndex = 11;
@@ -163,7 +175,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(162, 267);
+            this.label7.Location = new System.Drawing.Point(162, 325);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(30, 15);
             this.label7.TabIndex = 10;
@@ -174,7 +186,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(37, 267);
+            this.label6.Location = new System.Drawing.Point(37, 325);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 15);
             this.label6.TabIndex = 9;
@@ -185,7 +197,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(162, 160);
+            this.label5.Location = new System.Drawing.Point(162, 218);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 15);
             this.label5.TabIndex = 8;
@@ -196,7 +208,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(37, 160);
+            this.label4.Location = new System.Drawing.Point(37, 218);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(30, 15);
             this.label4.TabIndex = 7;
@@ -207,7 +219,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(14, 426);
+            this.label3.Location = new System.Drawing.Point(14, 542);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(173, 15);
             this.label3.TabIndex = 6;
@@ -238,7 +250,7 @@
             // 
             this.txtResult2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtResult2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtResult2.Location = new System.Drawing.Point(39, 240);
+            this.txtResult2.Location = new System.Drawing.Point(45, 204);
             this.txtResult2.Multiline = true;
             this.txtResult2.Name = "txtResult2";
             this.txtResult2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -247,6 +259,12 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.txtResult3);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.txtFrecuence);
@@ -257,15 +275,82 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(284, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(516, 450);
+            this.panel2.Size = new System.Drawing.Size(521, 566);
             this.panel2.TabIndex = 7;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.ForeColor = System.Drawing.Color.DimGray;
+            this.label15.Location = new System.Drawing.Point(16, 364);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(23, 13);
+            this.label15.TabIndex = 17;
+            this.label15.Text = "M3";
+            // 
+            // txtResult3
+            // 
+            this.txtResult3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtResult3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtResult3.Location = new System.Drawing.Point(45, 364);
+            this.txtResult3.Multiline = true;
+            this.txtResult3.Name = "txtResult3";
+            this.txtResult3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtResult3.Size = new System.Drawing.Size(439, 132);
+            this.txtResult3.TabIndex = 16;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(380, 526);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(35, 15);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "Rigor";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox5.Location = new System.Drawing.Point(421, 518);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(61, 29);
+            this.textBox5.TabIndex = 14;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.ForeColor = System.Drawing.Color.DimGray;
+            this.label13.Location = new System.Drawing.Point(16, 44);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(23, 13);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "M1";
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.Color.DimGray;
+            this.label12.Location = new System.Drawing.Point(16, 204);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(23, 13);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "M2";
             // 
             // label11
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(194, 403);
+            this.label11.Location = new System.Drawing.Point(197, 525);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(64, 15);
             this.label11.TabIndex = 11;
@@ -276,7 +361,7 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(39, 403);
+            this.label10.Location = new System.Drawing.Point(43, 525);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(57, 15);
             this.label10.TabIndex = 10;
@@ -286,7 +371,7 @@
             // 
             this.txtFrecuence.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtFrecuence.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtFrecuence.Location = new System.Drawing.Point(264, 396);
+            this.txtFrecuence.Location = new System.Drawing.Point(267, 518);
             this.txtFrecuence.Name = "txtFrecuence";
             this.txtFrecuence.ReadOnly = true;
             this.txtFrecuence.Size = new System.Drawing.Size(61, 29);
@@ -296,7 +381,7 @@
             // 
             this.txtElement.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtElement.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtElement.Location = new System.Drawing.Point(102, 396);
+            this.txtElement.Location = new System.Drawing.Point(106, 518);
             this.txtElement.Name = "txtElement";
             this.txtElement.Size = new System.Drawing.Size(61, 29);
             this.txtElement.TabIndex = 8;
@@ -305,10 +390,11 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.matriz1ToolStripMenuItem,
-            this.matriz2ToolStripMenuItem});
+            this.matriz2ToolStripMenuItem,
+            this.menu3ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(516, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(521, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -320,7 +406,12 @@
             this.elePrimosAcumularToolStripMenuItem,
             this.frecuenceToolStripMenuItem,
             this.contarElementosÚnicosToolStripMenuItem,
-            this.transpuestaDeUnaMatrizToolStripMenuItem});
+            this.transpuestaDeUnaMatrizToolStripMenuItem,
+            this.verifSiLasFilasEstánOrdenadasAscToolStripMenuItem,
+            this.elementoConMayorFrecuenciaToolStripMenuItem,
+            this.verifSiLaMatrizEstáOrdenadaConRigorToolStripMenuItem,
+            this.laMatrizEstáIncluidaEnOtraToolStripMenuItem,
+            this.segmentFilasEnParesEImparesOrdenToolStripMenuItem});
             this.matriz1ToolStripMenuItem.Name = "matriz1ToolStripMenuItem";
             this.matriz1ToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.matriz1ToolStripMenuItem.Text = "Matriz 1";
@@ -328,44 +419,79 @@
             // cargarToolStripMenuItem
             // 
             this.cargarToolStripMenuItem.Name = "cargarToolStripMenuItem";
-            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
             this.cargarToolStripMenuItem.Text = "Cargar";
             this.cargarToolStripMenuItem.Click += new System.EventHandler(this.cargarToolStripMenuItem_Click);
             // 
             // descargarToolStripMenuItem
             // 
             this.descargarToolStripMenuItem.Name = "descargarToolStripMenuItem";
-            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
             this.descargarToolStripMenuItem.Text = "Descargar";
             this.descargarToolStripMenuItem.Click += new System.EventHandler(this.descargarToolStripMenuItem_Click);
             // 
             // elePrimosAcumularToolStripMenuItem
             // 
             this.elePrimosAcumularToolStripMenuItem.Name = "elePrimosAcumularToolStripMenuItem";
-            this.elePrimosAcumularToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.elePrimosAcumularToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
             this.elePrimosAcumularToolStripMenuItem.Text = "1. Ele. primos - Acumular";
             this.elePrimosAcumularToolStripMenuItem.Click += new System.EventHandler(this.conElementosPrimosDeLaMatrizAcumularToolStripMenuItem_Click);
             // 
             // frecuenceToolStripMenuItem
             // 
             this.frecuenceToolStripMenuItem.Name = "frecuenceToolStripMenuItem";
-            this.frecuenceToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.frecuenceToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
             this.frecuenceToolStripMenuItem.Text = "2. Frecuencia de un elemento";
             this.frecuenceToolStripMenuItem.Click += new System.EventHandler(this.frecuenceToolStripMenuItem_Click);
             // 
             // contarElementosÚnicosToolStripMenuItem
             // 
             this.contarElementosÚnicosToolStripMenuItem.Name = "contarElementosÚnicosToolStripMenuItem";
-            this.contarElementosÚnicosToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.contarElementosÚnicosToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
             this.contarElementosÚnicosToolStripMenuItem.Text = "3. Contar elementos únicos";
             this.contarElementosÚnicosToolStripMenuItem.Click += new System.EventHandler(this.contarElementosÚnicosToolStripMenuItem_Click);
             // 
             // transpuestaDeUnaMatrizToolStripMenuItem
             // 
             this.transpuestaDeUnaMatrizToolStripMenuItem.Name = "transpuestaDeUnaMatrizToolStripMenuItem";
-            this.transpuestaDeUnaMatrizToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.transpuestaDeUnaMatrizToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
             this.transpuestaDeUnaMatrizToolStripMenuItem.Text = "4. Transpuesta de una Matriz";
             this.transpuestaDeUnaMatrizToolStripMenuItem.Click += new System.EventHandler(this.transpuestaDeUnaMatrizToolStripMenuItem_Click);
+            // 
+            // verifSiLasFilasEstánOrdenadasAscToolStripMenuItem
+            // 
+            this.verifSiLasFilasEstánOrdenadasAscToolStripMenuItem.Name = "verifSiLasFilasEstánOrdenadasAscToolStripMenuItem";
+            this.verifSiLasFilasEstánOrdenadasAscToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
+            this.verifSiLasFilasEstánOrdenadasAscToolStripMenuItem.Text = "5. Verif. si las filas están ordenadas (Asc)";
+            this.verifSiLasFilasEstánOrdenadasAscToolStripMenuItem.Click += new System.EventHandler(this.verifSiLasFilasEstánOrdenadasAscToolStripMenuItem_Click);
+            // 
+            // elementoConMayorFrecuenciaToolStripMenuItem
+            // 
+            this.elementoConMayorFrecuenciaToolStripMenuItem.Name = "elementoConMayorFrecuenciaToolStripMenuItem";
+            this.elementoConMayorFrecuenciaToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
+            this.elementoConMayorFrecuenciaToolStripMenuItem.Text = "6. Elemento con mayor frecuencia";
+            this.elementoConMayorFrecuenciaToolStripMenuItem.Click += new System.EventHandler(this.elementoConMayorFrecuenciaToolStripMenuItem_Click);
+            // 
+            // verifSiLaMatrizEstáOrdenadaConRigorToolStripMenuItem
+            // 
+            this.verifSiLaMatrizEstáOrdenadaConRigorToolStripMenuItem.Name = "verifSiLaMatrizEstáOrdenadaConRigorToolStripMenuItem";
+            this.verifSiLaMatrizEstáOrdenadaConRigorToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
+            this.verifSiLaMatrizEstáOrdenadaConRigorToolStripMenuItem.Text = "7. Verif. si la matriz está ordenada con rigor";
+            this.verifSiLaMatrizEstáOrdenadaConRigorToolStripMenuItem.Click += new System.EventHandler(this.verifSiLaMatrizEstáOrdenadaConRigorToolStripMenuItem_Click);
+            // 
+            // laMatrizEstáIncluidaEnOtraToolStripMenuItem
+            // 
+            this.laMatrizEstáIncluidaEnOtraToolStripMenuItem.Name = "laMatrizEstáIncluidaEnOtraToolStripMenuItem";
+            this.laMatrizEstáIncluidaEnOtraToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
+            this.laMatrizEstáIncluidaEnOtraToolStripMenuItem.Text = "8. La Matriz está incluida en otra?";
+            this.laMatrizEstáIncluidaEnOtraToolStripMenuItem.Click += new System.EventHandler(this.laMatrizEstáIncluidaEnOtraToolStripMenuItem_Click);
+            // 
+            // segmentFilasEnParesEImparesOrdenToolStripMenuItem
+            // 
+            this.segmentFilasEnParesEImparesOrdenToolStripMenuItem.Name = "segmentFilasEnParesEImparesOrdenToolStripMenuItem";
+            this.segmentFilasEnParesEImparesOrdenToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
+            this.segmentFilasEnParesEImparesOrdenToolStripMenuItem.Text = "9. Segment. filas en pares e impares orden.";
+            this.segmentFilasEnParesEImparesOrdenToolStripMenuItem.Click += new System.EventHandler(this.segmentFilasEnParesEImparesOrdenToolStripMenuItem_Click);
             // 
             // matriz2ToolStripMenuItem
             // 
@@ -390,16 +516,31 @@
             this.descargarToolStripMenuItem1.Text = "Descargar";
             this.descargarToolStripMenuItem1.Click += new System.EventHandler(this.descargarToolStripMenuItem1_Click);
             // 
+            // menu3ToolStripMenuItem
+            // 
+            this.menu3ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ejericio1ToolStripMenuItem});
+            this.menu3ToolStripMenuItem.Name = "menu3ToolStripMenuItem";
+            this.menu3ToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.menu3ToolStripMenuItem.Text = "Menu 3";
+            // 
+            // ejericio1ToolStripMenuItem
+            // 
+            this.ejericio1ToolStripMenuItem.Name = "ejericio1ToolStripMenuItem";
+            this.ejericio1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ejericio1ToolStripMenuItem.Text = "Ejercicio 1";
+            this.ejericio1ToolStripMenuItem.Click += new System.EventHandler(this.ejericio1ToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(805, 566);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(821, 605);
             this.Name = "Form1";
             this.Text = "Práctico de Matrices - Luis Gabriel Janco Alvarez";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -447,5 +588,18 @@
         private ToolStripMenuItem frecuenceToolStripMenuItem;
         private ToolStripMenuItem contarElementosÚnicosToolStripMenuItem;
         private ToolStripMenuItem transpuestaDeUnaMatrizToolStripMenuItem;
+        private Label label13;
+        private Label label12;
+        private ToolStripMenuItem verifSiLasFilasEstánOrdenadasAscToolStripMenuItem;
+        private ToolStripMenuItem elementoConMayorFrecuenciaToolStripMenuItem;
+        private Label label14;
+        private TextBox textBox5;
+        private ToolStripMenuItem verifSiLaMatrizEstáOrdenadaConRigorToolStripMenuItem;
+        private Label label15;
+        private TextBox txtResult3;
+        private ToolStripMenuItem laMatrizEstáIncluidaEnOtraToolStripMenuItem;
+        private ToolStripMenuItem segmentFilasEnParesEImparesOrdenToolStripMenuItem;
+        private ToolStripMenuItem menu3ToolStripMenuItem;
+        private ToolStripMenuItem ejericio1ToolStripMenuItem;
     }
 }

@@ -32,5 +32,10 @@ namespace PracticoDeMatrices
             }
             return number > 1;
         }
+
+        public bool IsEven()
+        {
+            return number % 2 == 0;
+        }
     }
 }
