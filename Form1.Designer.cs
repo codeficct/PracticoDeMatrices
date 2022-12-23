@@ -74,6 +74,7 @@
             this.descargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menu3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ejericio1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenarMatrixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -519,7 +520,8 @@
             // menu3ToolStripMenuItem
             // 
             this.menu3ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ejericio1ToolStripMenuItem});
+            this.ejericio1ToolStripMenuItem,
+            this.ordenarMatrixToolStripMenuItem});
             this.menu3ToolStripMenuItem.Name = "menu3ToolStripMenuItem";
             this.menu3ToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.menu3ToolStripMenuItem.Text = "Menu 3";
@@ -530,6 +532,13 @@
             this.ejericio1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ejericio1ToolStripMenuItem.Text = "Ejercicio 1";
             this.ejericio1ToolStripMenuItem.Click += new System.EventHandler(this.ejericio1ToolStripMenuItem_Click);
+            // 
+            // ordenarMatrixToolStripMenuItem
+            // 
+            this.ordenarMatrixToolStripMenuItem.Name = "ordenarMatrixToolStripMenuItem";
+            this.ordenarMatrixToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ordenarMatrixToolStripMenuItem.Text = "Ordenar matrix";
+            this.ordenarMatrixToolStripMenuItem.Click += new System.EventHandler(this.ordenarMatrixToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -601,5 +610,6 @@
         private ToolStripMenuItem segmentFilasEnParesEImparesOrdenToolStripMenuItem;
         private ToolStripMenuItem menu3ToolStripMenuItem;
         private ToolStripMenuItem ejericio1ToolStripMenuItem;
+        private ToolStripMenuItem ordenarMatrixToolStripMenuItem;
     }
 }

@@ -1,3 +1,5 @@
+
+
 namespace PracticoDeMatrices
 {
     public partial class Form1 : Form
@@ -145,6 +147,13 @@ namespace PracticoDeMatrices
         private void ejericio1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             objMatrix1.Ejercicio2(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text), int.Parse(textBox4.Text));
+            txtResult2.Text = objMatrix1.GetData();
+        }
+
+        private void ordenarMatrixToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objMatrix1.SortMatrix(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text), int.Parse(textBox4.Text));
+            txtResult2.Text = objMatrix1.GetData();
         }
 
         private void laMatrizEst·IncluidaEnOtraToolStripMenuItem_Click(object sender, EventArgs e)

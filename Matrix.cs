@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+﻿using System.Numerics;
 
 namespace PracticoDeMatrices
 {
@@ -254,15 +248,77 @@ namespace PracticoDeMatrices
             }
         }
 
-        public void Ejercicio2(int fi, int ff, int ci, int cf)
+        public void Ejercicio2(int ri, int rf, int ci, int cf)
         {
-            for (int c = ci - 1; c <= cf - 1; c++)
+            int i = 0;
+            IntegerNumber
+                num1 = new IntegerNumber(),
+                num2 = new IntegerNumber();
+            for (int c1 = ci - 1; c1 <= cf - 1; c1++)
             {
-                for (int r = ff-1; r >= fi -1; r--)
+                for (int r1 = rf - 1; r1 >= ri - 1; r1--)
                 {
-                    matrix[c, r] = 0;
+                    for (int c2 = c1; c2 <= cf - 1; c2++)
+                    {
+                        if (c2 == c1)
+                            i = r1;
+                        else
+                            i = 1;
+                        for (int r2 = i; r2 >= ri - 1; r2--)
+                        {
+                            num1.SetNumber(matrix[r1, c1]); num2.SetNumber(matrix[r2, c2]);
+                            if ((num2.IsEven() && !num1.IsEven())
+                                || (num2.IsEven() && num1.IsEven() && (matrix[r1, c1] > matrix[r2, c2]))
+                                || (!num2.IsEven() && !num1.IsEven() && (matrix[r1, c1] > matrix[r2, c2])))
+                                SwapItems(r1, c1, r2, c2);
+                        }
+                    }
                 }
             }
+        }
+
+        public void ResizeVector(ref int[] vector)
+        {
+            Array.Resize(ref vector, vector.Length + 1);
+        }
+        public void SortElements(ref int[] par, ref int[] impar)
+        {
+            Array.Sort(par); Array.Sort(impar);
+        }
+
+        public void SortMatrix(int ri, int rf, int ci, int cf)
+        {
+            int i = 0, j = 0, k = 0;
+            bool IsEven = true;
+            int[] par = new int[0], impar = new int[0];
+            for (int c1 = ci - 1; c1 <= cf - 1; c1++)
+                for (int r1 = rf - 1; r1 >= ri - 1; r1--)
+                    if (matrix[r1, c1] % 2 == 0)
+                    {
+                        this.ResizeVector(ref par);
+                        par[i] = matrix[r1, c1];
+                        i++;
+                    }
+                    else
+                    {
+                        this.ResizeVector(ref impar);
+                        impar[j] = matrix[r1, c1];
+                        j++;
+                    }
+            this.SortElements(ref par, ref impar);
+            j = 0;
+            for (int c1 = ci - 1; c1 <= cf - 1; c1++)
+                for (int r1 = rf - 1; r1 >= ri - 1; r1--)
+                {
+                    if (IsEven && (k < i))
+                    {
+                        matrix[r1, c1] = par[k]; k++;
+                    }
+                    else
+                    {
+                        matrix[r1, c1] = impar[j]; j++;
+                    }
+                }
         }
     }
 }
